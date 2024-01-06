@@ -1,15 +1,22 @@
 package main.java;
 public class Main {
     public static void main(String[] args) {
-        Circle mycircle = new Circle("Blue", 5.0);
-        Rectangle myrectangle = new Rectangle("Yellow", 15, 10);
-        Triangle mytriangle = new Triangle("Red", 3, 4, 5);
+        // Singleton pattern
+        Singleton singleton = Singleton.getInstance();
+        singleton.showMessage();
 
-        System.out.println("Circle area is: " + mycircle.calculateArea());
-        System.out.println("Circle string is: " + mycircle);
-        System.out.println("Rectangle area is: " + myrectangle.calculateArea());
-        System.out.println("Rectangle string is: " + myrectangle);
-        System.out.println("Triangle area is: " + mytriangle.calculateArea());
-        System.out.println("Triangle string is: " + mytriangle);
+        // Factory pattern
+        ProductFactory factoryA = new ConcreteFactoryA();
+        Product productA = factoryA.createProduct();
+        productA.displayInfo();
+
+        ProductFactory factoryB = new ConcreteFactoryB();
+        Product productB = factoryB.createProduct();
+        productB.displayInfo();
+
+        // Adapter pattern
+        Adaptee adaptee = new Adaptee();
+        Target target = new Adapter(adaptee);
+        target.request();
     }
 }
