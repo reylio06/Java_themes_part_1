@@ -5,9 +5,9 @@ public class Main {
         Rectangle myrectangle = new Rectangle("Yellow", 15, 10);
 
         System.out.println("Circle area is: " + mycircle.calculateArea());
-        System.out.println("Circle string is: " + mycircle.toString());
+        System.out.println("Circle string is: " + mycircle);
         System.out.println("Rectangle area is: " + myrectangle.calculateArea());
-        System.out.println("Rectangle string is: " + myrectangle.toString());
+        System.out.println("Rectangle string is: " + myrectangle);
 
     }
 }

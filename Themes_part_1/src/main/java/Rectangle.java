@@ -2,9 +2,11 @@ package main.java;
 
 public class Rectangle extends Shape{
 
+    // Rectangle attributes
     protected double length;
     protected double width;
 
+    // Rectangle constructor
     public Rectangle(String color, double length, double width){
         super(color);
         this.length = length;
