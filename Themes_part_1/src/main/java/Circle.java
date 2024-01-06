@@ -1,13 +1,14 @@
 package main.java;
 
-public class Circle extends Shape{
+public class Circle implements Shape{
 
     // Circle attributes
+    private String color;
     private final double radius;
 
     // Circle constructor
     public Circle(String color, double radius){
-        super(color);
+        this.color = color;
         this.radius = radius;
     }
 

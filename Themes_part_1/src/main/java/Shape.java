@@ -1,21 +1,12 @@
 package main.java;
 
-public abstract class Shape {
-
-    // Attributes
-    protected String color;
-
-    // Constructor
-    public Shape(String color){
-        this.color = color;
-    }
+interface Shape {
 
     // Method to calculate Area
-    public abstract double calculateArea();
+    double calculateArea();
 
     // Method to print information
-    @Override
-    public abstract String toString();
+    String toString();
 
 }
 

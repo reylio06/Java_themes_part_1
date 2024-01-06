@@ -1,15 +1,16 @@
 package main.java;
 
-public class Triangle extends Shape {
+public class Triangle implements Shape {
 
     // Triangle attributes
+    private String color;
     protected double side_value1;
     protected double side_value2;
     protected double side_value3;
 
     // Triangle constructor
     public Triangle(String color, double side_value1, double side_value2, double side_value3){
-        super(color);
+        this.color = color;
         this.side_value1 = side_value1;
         this.side_value2 = side_value2;
         this.side_value3 = side_value3;

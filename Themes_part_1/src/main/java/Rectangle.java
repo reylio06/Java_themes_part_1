@@ -1,14 +1,15 @@
 package main.java;
 
-public class Rectangle extends Shape{
+public class Rectangle implements Shape{
 
     // Rectangle attributes
-    protected double length;
-    protected double width;
+    private String color;
+    private double length;
+    private double width;
 
     // Rectangle constructor
     public Rectangle(String color, double length, double width){
-        super(color);
+        this.color = color;
         this.length = length;
         this.width = width;
     }
