@@ -1,6 +1,7 @@
 package main.java;
 
 class VarArgsAdd {
+    // Solution
     void add(int ... numbers){
         int sum = 0;
         StringBuilder result = new StringBuilder();
